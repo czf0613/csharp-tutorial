@@ -6,7 +6,16 @@ namespace console
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int a = 1, b = 2;
+            
+            var c = 100;
+
+            dynamic aa = 1;
+            aa++;
+            Console.WriteLine(aa);
+            
+            aa = "123456";
+            Console.WriteLine(aa.Length);
         }
     }
 }
