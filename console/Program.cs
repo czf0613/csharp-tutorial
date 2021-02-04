@@ -4,20 +4,29 @@ namespace console
 {
     class Program
     {
+        enum Test
+        {
+            Value1 = 0,
+            Value2 = 1,
+            Value3 = 2
+        }
+
+        enum Another
+        {
+            Value1 = 0,
+            Value2 = 1
+        }
+
+        struct Test2
+        {
+            public int a;
+            public int b;
+        }
+
         static void Main(string[] args)
         {
-            var array = new int[100];
-            for (var i = 0; i < 100; ++i)
-                array[i] = i;
-
-            //切片
-            int[] slice = array[1..10];
-            foreach (var i in slice)
-            {
-                Console.WriteLine(i);
-            }
-
-            Console.WriteLine(array[^1]);
+            var a = Test.Value1;
+            // a = Another.Value1;
         }
     }
 }
