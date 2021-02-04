@@ -6,16 +6,17 @@ namespace console
     {
         static void Main(string[] args)
         {
-            int a = 1, b = 2;
+            int a = 1;
+            long b = 1L;
             
-            var c = 100;
+            float c = 1.0f;
+            double d = 1.0;
 
-            dynamic aa = 1;
-            aa++;
-            Console.WriteLine(aa);
-            
-            aa = "123456";
-            Console.WriteLine(aa.Length);
+            bool e = false;
+            decimal f = 1.3333333333333M;
+
+            string g = "123456789";
+            char h = 'a';
         }
     }
 }
